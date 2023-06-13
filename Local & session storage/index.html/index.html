@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello javascript
+    <script>
+        localStorage.setItem("name","harsh")
+        localStorage.setItem('email','h@gmail.com')
+        console.log(window.localStorage)
+        // localStorage.clear()
+        // let name1=localStorage.getItem('name');
+        // console.log(name1)
+        console.log(localStorage.getItem('name'));
+        console.log(localStorage.removeItem('name'))
+
+        let Arr=["harsh","nik","ganibhai","jollybhai"];
+
+        localStorage.setItem('navinnav',JSON.stringify(Arr));  // if we ant to store array in localstorage use
+      let z=  JSON.parse(localStorage.getItem('navinnav')) //Json.parse -so it can stored as object of string.
+        console.log(z)    // due to json.parse we get again in array form
+                        //json=array
+
+        sessionStorage.setItem("name","harsh")
+        sessionStorage.setItem('email','h@gmail.com')         
+    </script>
+</body>
+</html>

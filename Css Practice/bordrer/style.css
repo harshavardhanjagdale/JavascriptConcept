@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box1{
+    border: 5px solid black;
+    background-color: green;
+    margin: 20px;
+    height: 400px;
+    width: 233px;
+}
+
+.box2{
+    background-color: red;
+    height: 20px;
+    /* margin: 40px; */
+    border: 1px solid black;
+    width: 100%;
+    padding: 2px;
+    /* box-sizing: content-box;     by default ahe */
+    box-sizing: border-box;
+}

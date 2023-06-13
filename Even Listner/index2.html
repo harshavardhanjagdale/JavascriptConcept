@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3 id="wordcount"></h3>
+    <!-- <textarea id="textarea" (keyup)="keyup()"></textarea> -->
+    <input type="text" id="textarea" onkeypress="keyup()">
+
+    <script>
+
+      function keyup(){
+                    let count=document.getElementById('wordcount').innerText;
+                    var text=document.getElementById('textarea').innerText
+
+                    console.log(text)
+
+                    if(text.trim=''){
+                        count=0;
+                    }
+                    else{
+
+                    var fcount=text.trim().split(" ").length;
+                    console.log(fcount)
+                    count=fcount;
+                    }
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="yes">
+    <button onclick="Removearr()">click to remove array element</button>
+    
+</body>
+<script>
+
+var arr=[10,12,34,54];
+    console.log(arr)
+  
+function Removearr(){
+    
+    let posion=document.getElementById('yes').value;
+    posion=parseInt(posion);
+
+    
+    for(let i=posion;i<arr.length-1;i++){
+        arr[i]=arr[i+1]
+
+
+    }
+    arr.length=arr.length-1;
+    console.log( arr)
+
+}
+
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" (keypress)="restrictAlphabets($event)" maxlength="2">
+    <script>
+       function restrictAlphabets(e) {
+    const x = e.which || e.keycode;
+    if ((x >= 48 && x <= 57) || x == 8 || (x >= 35 && x <= 40) || x == 46) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+    </script>
+</body>
+</html>

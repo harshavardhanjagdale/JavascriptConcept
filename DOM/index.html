@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="nik" class="nik1">Hello NIk</h2>
+    <!-- <button onclick="fun()">click mex</button> -->
+    <input onkeyup="fun()" value="" id="inputtext" name="bhai">
+
+    
+
+    <script>
+        function fun(){
+            let newvalue=document.getElementById("inputtext").value;
+            // let temp=document.getElementById("nik").innerText="Hello nikbhai";
+            document.getElementById("nik").innerText=newvalue;
+            console.log(document.getElementsByClassName("nik1")[0]);
+            console.log(document.getElementsByTagName("h2")[0]);
+            console.log(document.getElementsByName("bhai")[0]);
+            
+
+            
+
+        }
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <style>
+        #btn{
+            border: 2px solid black;
+            height: 20px;
+            width: 150px;
+            color: black;
+            background-color: red;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is heading ..
+    </h1>
+    <p id="para">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut in perferendis asperiores at excepturi exercitationem
+    nam qui minima dolore! Labore eos illum, dicta corrupti adipisci placeat. Nulla, eveniet consectetur. Dolorem
+    nesciunt minus velit reiciendis est dolor soluta dolores deserunt officiis deleniti quidem reprehenderit recusandae
+    aperiam hic, sit ipsam ab laudantium eveniet dicta! Quis sunt voluptatum temporibus excepturi numquam perferendis,
+    iusto rem corrupti quae nulla odio asperiores amet, id vel eaque! Eius incidunt velit neque nam dolorum soluta et.
+    Distinctio minima perspiciatis magnam minus reprehenderit? Esse inventore libero odit ipsam eaque porro architecto
+    commodi! Ullam nesciunt accusantium obcaecati sit voluptatem, ex consequuntur officia! Eius qui rerum fugit a
+    pariatur, perferendis dolores doloremque error quis provident saepe nisi earum optio quia quibusdam sunt eaque
+    consequatur at quas vero impedit suscipit aliquid. Adipisci vero nobis maxime excepturi odit unde numquam a fugiat
+    accusamus, consectetur quibusdam labore quas incidunt nihil similique rem quisquam atque ab ad consequuntur tempora
+    tenetur aut dignissimos laudantium. Saepe, delectus. Labore blanditiis tempora consequuntur aliquam modi, reiciendis
+    nemo illum corporis recusandae nihil veniam minima quasi voluptatibus laboriosam error, quia, hic quam quod sint.
+    Aliquid, ipsa fuga impedit nesciunt libero ipsam, fugit doloribus, totam tempore ullam tenetur sed ab temporibus
+    atque? Laborum, veniam! Voluptate quasi obcaecati nisi dicta adipisci asperiores ex deserunt reiciendis aperiam
+    consequatur consectetur suscipit, neque omnis quas nobis, est harum nulla quibusdam dolore aliquid vitae? Eaque
+    reprehenderit atque commodi a dicta doloribus.</p>
+
+    <button id="btn" onclick="fun()"> show and hide</button>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover",function gun(){
+            console.log("mouse on paragraph");
+        });
+        para.addEventListener("mouseleave",function(){
+            console.log("mouse outside paragraph");
+        });
+        function fun(){
+            let para=document.getElementById("para");  // he sentence nahi lihle tri direct para.style.display
+            if(para.style.display != "none"){          // tri te id aslyamule ghete,document.getElement chi garaj nahi
+            para.style.display="none";
+            }
+            else{
+                para.style.display="block";
+            }
+}
+    </script>
+
+</body>
+
+</html>
